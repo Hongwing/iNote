@@ -14,4 +14,19 @@
 
 ### 	>1. 主界面笔记显示，采用两种形式：UITableView UICollectionView
 
-### 	>2. Fix bug:不能编辑界面返回后记录点击之前的日记显示形式	
+### 	>2. Fix bug:不能编辑界面返回后记录点击之前的日记显示形式
+
+## V1.1.0
+
+### 	>1.Fixbug:在选中UICollectionViewCell之后，不能够在主控制器和编 辑       	控制器之间正常传递信息（只传递第一个cell）
+
+### 	>2.Fixbug:点击tableviewcell之后返回到tableView界面；点击collectionviewcell之后返回到tableveiw
+
+
+
+
+
+## V1.1.1
+
+#### 	>1.对collectionviewcell添加长按删除功能（见代码）
+
