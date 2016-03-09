@@ -18,6 +18,8 @@
 		A9BDF23C1C72D0BC000CD8BB /* HWNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDF23B1C72D0BC000CD8BB /* HWNoteViewController.m */; };
 		A9F237B01C73307800E9556F /* HWNoteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F237AF1C73307800E9556F /* HWNoteTool.m */; };
 		A9F237B31C73399F00E9556F /* HWNoteEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F237B21C73399F00E9556F /* HWNoteEditViewController.m */; };
+		A9FC6CD71C76E15C00F4CDF6 /* HWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FC6CD51C76E15C00F4CDF6 /* HWCollectionViewCell.m */; };
+		A9FC6CD81C76E15C00F4CDF6 /* HWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FC6CD61C76E15C00F4CDF6 /* HWCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		A9F237AF1C73307800E9556F /* HWNoteTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNoteTool.m; sourceTree = "<group>"; };
 		A9F237B11C73399F00E9556F /* HWNoteEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNoteEditViewController.h; sourceTree = "<group>"; };
 		A9F237B21C73399F00E9556F /* HWNoteEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNoteEditViewController.m; sourceTree = "<group>"; };
+		A9FC6CD41C76E15C00F4CDF6 /* HWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWCollectionViewCell.h; sourceTree = "<group>"; };
+		A9FC6CD51C76E15C00F4CDF6 /* HWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWCollectionViewCell.m; sourceTree = "<group>"; };
+		A9FC6CD61C76E15C00F4CDF6 /* HWCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		A9BDF1FF1C72C782000CD8BB = {
 			isa = PBXGroup;
 			children = (
+				A9FC6CD01C76D89A00F4CDF6 /* Views */,
 				A9BDF2331C72C88F000CD8BB /* AppDelegate */,
 				A9BDF2321C72C889000CD8BB /* Models */,
 				A9BDF2311C72C87F000CD8BB /* ViewControllers */,
@@ -163,6 +169,16 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		A9FC6CD01C76D89A00F4CDF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9FC6CD41C76E15C00F4CDF6 /* HWCollectionViewCell.h */,
+				A9FC6CD51C76E15C00F4CDF6 /* HWCollectionViewCell.m */,
+				A9FC6CD61C76E15C00F4CDF6 /* HWCollectionViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +263,7 @@
 				A9BDF2171C72C782000CD8BB /* Main.storyboard in Resources */,
 				A9BDF21C1C72C782000CD8BB /* LaunchScreen.xib in Resources */,
 				A9BDF2191C72C782000CD8BB /* Images.xcassets in Resources */,
+				A9FC6CD81C76E15C00F4CDF6 /* HWCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +288,7 @@
 				A9BDF23C1C72D0BC000CD8BB /* HWNoteViewController.m in Sources */,
 				A9BDF2111C72C782000CD8BB /* AppDelegate.m in Sources */,
 				A9BDF20E1C72C782000CD8BB /* main.m in Sources */,
+				A9FC6CD71C76E15C00F4CDF6 /* HWCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

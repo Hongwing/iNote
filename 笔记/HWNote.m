@@ -15,6 +15,7 @@
     if (self = [super init])
     {
         self.noteContent = Content;
+        // self.noteDate = date;
     }
     return self;
 }
@@ -31,6 +32,7 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
     [aCoder encodeObject:self.noteContent forKey:@"content"];
+    // [aCoder encodeObject:self.noteDate forKey:@"createDate"];
 }
 
 // 恢复对象
@@ -39,6 +41,7 @@
     if (self = [super init])
     {
         self.noteContent = [aDecoder decodeObjectForKey:@"content"];
+        // self.noteDate = [aDecoder decodeObjectForKey:@"createDate"];
     }
     return self;
 }

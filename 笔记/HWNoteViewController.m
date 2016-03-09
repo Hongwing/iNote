@@ -39,13 +39,26 @@
     }
 }
 
+- (void)observTextisFull
+{
+    self.navigationItem.rightBarButtonItem.enabled = (self.contentTextView.text.length > 0);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"Note";
     self.contentTextView.text = self.noteContent;
     
+    // 1.获取通知中心
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self
+               selector:@selector(observTextisFull)
+                   name:UITextViewTextDidChangeNotification
+                 object:self.contentTextView];
+    
     UIBarButtonItem *saveButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveNote)];
+    saveButtonItem.enabled = false;
     self.navigationItem.rightBarButtonItem = saveButtonItem;
 }
 
